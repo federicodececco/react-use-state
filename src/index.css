@@ -4,10 +4,15 @@ main {
   margin: auto;
   justify-content: center;
 }
+.element {
+  width: 600px;
+  padding: 10px 10px;
+}
 .accordion-top {
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  width: 580px;
   background-color: darkgoldenrod;
 }
 .accordion-bot {
@@ -16,4 +21,9 @@ main {
 }
 p {
   margin: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
 }
