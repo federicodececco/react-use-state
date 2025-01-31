@@ -1,0 +1,19 @@
+main {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.accordion-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: darkgoldenrod;
+}
+.accordion-bot {
+  background-color: blue;
+  color: white;
+}
+p {
+  margin: 0;
+}
