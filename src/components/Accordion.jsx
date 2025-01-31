@@ -7,23 +7,30 @@ export default function Accordion() {
   return (
     <>
       <section>
-        <AccordionElement
-          title={languages[0].title}
-          isLooked={lookedElement === 0}
-          lookTrigger={() => setLookedElement(0)}
-          lookShut={() => setLookedElement(100)}
-        >
-          {languages[0].description}
-        </AccordionElement>
-        <AccordionElement
-          title={languages[1].title}
-          isLooked={lookedElement === 1}
-          lookTrigger={() => setLookedElement(1)}
-          lookShut={() => setLookedElement(100)}
-        >
-          {languages[1].description}
-        </AccordionElement>
+        {languages.map((elem) => {
+          return (
+            <AccordionElement
+              key={elem.id}
+              title={elem.title}
+              isLooked={lookedElement === elem.id}
+              lookTrigger={() => setLookedElement(elem.id)}
+              lookShut={() => setLookedElement(100)}
+            >
+              {elem.description}
+            </AccordionElement>
+          );
+        })}
       </section>
     </>
   );
+}
+{
+  /* <AccordionElement
+title={languages[0].title}
+isLooked={lookedElement === 0}
+lookTrigger={() => setLookedElement(0)}
+lookShut={() => setLookedElement(100)}
+>
+{languages[0].description}
+</AccordionElement> */
 }
