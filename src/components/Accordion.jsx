@@ -1,4 +1,3 @@
-import AccordionBtn from "./AccordionBtn";
 import { useState } from "react";
 import AccordionElement from "./AccordionElement";
 
