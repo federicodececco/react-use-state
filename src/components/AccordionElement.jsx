@@ -23,7 +23,7 @@ export default function AccordionElement({
             </div>
           </div>
         ) : (
-          <div>
+          <div className="element">
             <div className="accordion-top">
               <h1>{title}</h1>
               <div>

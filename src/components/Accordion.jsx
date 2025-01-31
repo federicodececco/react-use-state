@@ -1,32 +1,29 @@
 import { useState } from "react";
 import AccordionElement from "./AccordionElement";
+import languages from "../data/languages";
 
 export default function Accordion() {
   const [lookedElement, setLookedElement] = useState(0);
   return (
     <>
-      <AccordionElement
-        title="HTML"
-        isLooked={lookedElement === 0}
-        lookTrigger={() => setLookedElement(0)}
-        lookShut={() => setLookedElement(100)}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        necessitatibus nemo quidem. Veritatis culpa, numquam at sed, quaerat
-        alias labore odio fugit eligendi iusto itaque accusantium quisquam nihil
-        quasi vel.
-      </AccordionElement>
-      <AccordionElement
-        title="CSS"
-        isLooked={lookedElement === 1}
-        lookTrigger={() => setLookedElement(1)}
-        lookShut={() => setLookedElement(100)}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        necessitatibus nemo quidem. Veritatis culpa, numquam at sed, quaerat
-        alias labore odio fugit eligendi iusto itaque accusantium quisquam nihil
-        quasi vel.
-      </AccordionElement>
+      <section>
+        <AccordionElement
+          title={languages[0].title}
+          isLooked={lookedElement === 0}
+          lookTrigger={() => setLookedElement(0)}
+          lookShut={() => setLookedElement(100)}
+        >
+          {languages[0].description}
+        </AccordionElement>
+        <AccordionElement
+          title={languages[1].title}
+          isLooked={lookedElement === 1}
+          lookTrigger={() => setLookedElement(1)}
+          lookShut={() => setLookedElement(100)}
+        >
+          {languages[1].description}
+        </AccordionElement>
+      </section>
     </>
   );
 }

@@ -4,20 +4,24 @@ main {
   margin: auto;
   justify-content: center;
 }
-.element {
+section {
   width: 600px;
+}
+.element {
   padding: 10px 10px;
+  margin-bottom: 15px;
 }
 .accordion-top {
-  padding: 10px 10px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  width: 580px;
+
   background-color: darkgoldenrod;
 }
 .accordion-bot {
   background-color: blue;
   color: white;
+  padding: 10px;
 }
 p {
   margin: 0;
