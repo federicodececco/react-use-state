@@ -24,13 +24,3 @@ export default function Accordion() {
     </>
   );
 }
-{
-  /* <AccordionElement
-title={languages[0].title}
-isLooked={lookedElement === 0}
-lookTrigger={() => setLookedElement(0)}
-lookShut={() => setLookedElement(100)}
->
-{languages[0].description}
-</AccordionElement> */
-}

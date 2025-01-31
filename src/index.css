@@ -1,3 +1,6 @@
+body {
+  background-color: #e4e4e4;
+}
 main {
   max-width: 1200px;
   display: flex;
@@ -16,11 +19,15 @@ section {
   display: flex;
   justify-content: space-between;
 
-  background-color: darkgoldenrod;
+  background-color: #efefef;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.active {
+  background-color: #f6c344;
 }
 .accordion-bot {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10px;
 }
 p {

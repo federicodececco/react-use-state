@@ -10,7 +10,7 @@ export default function AccordionElement({
       <div>
         {isLooked ? (
           <div className="element">
-            <div className="accordion-top">
+            <div className="accordion-top active">
               <h1>{title}</h1>
               <div>
                 <button onClick={lookShut}>
