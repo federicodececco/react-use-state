@@ -1,40 +1,20 @@
-body {
-  background-color: #e4e4e4;
-}
-main {
-  max-width: 1200px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-section {
-  width: 600px;
-}
-.element {
-  padding: 10px 10px;
-  margin-bottom: 15px;
-}
-.accordion-top {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+@import "tailwindcss";
 
-  background-color: #efefef;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+:root {
+  --select-color: #f6c344;
+  --bg-color: #e5e5e5;
+  --close-bg: #efefef;
+}
+
+body {
+  background-color: var(--bg-color);
 }
 .active {
-  background-color: #f6c344;
-}
-.accordion-bot {
-  background-color: white;
-  color: black;
-  padding: 10px;
+  background-color: var(--select-color);
 }
 p {
-  margin: 0;
+  background-color: white;
 }
-button {
-  background-color: transparent;
-  border: none;
-  font-size: 30px;
+.off {
+  background-color: var(--close-bg);
 }
